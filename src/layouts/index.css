@@ -656,6 +656,7 @@ pre tt:after {
 
 #gallery {
     background: #0F0F0F;
+    min-height: 100vh;
 }
 
 #gallery img {
@@ -694,3 +695,12 @@ pre tt:after {
     opacity: .4;
 }
 
+.heading {
+    padding: 30px;
+}
+
+@media only screen and (max-width: 640px) {
+    .contact-methods {
+       flex-direction: column;
+    }
+}
