@@ -1,6 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: 'Gatsby Default Starter',
+    title: 'Gaja Design',
   },
-  plugins: ['gatsby-plugin-react-helmet'],
+    plugins: ['gatsby-plugin-react-helmet'],
+    pathPrefix: '/gajadesign'
 };

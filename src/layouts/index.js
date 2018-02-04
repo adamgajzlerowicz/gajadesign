@@ -5,29 +5,29 @@ import Helmet from 'react-helmet';
 import './index.css'
 
 const TemplateWrapper = ({ children }) => (
-  <div>
-    <Helmet
-      title="Gaja design"
-      meta={[
-        { name: 'description', content: 'Strona domowa agencji reklamy Gaja Design' },
-        { name: 'keywords', content: 'poznań, reklama, agencja reklamy, gajzlerowicz, etykiety' },
-      ]}
-    />
-    <div
-      style={{
-        margin: '0 auto',
-        maxWidth: 960,
-        padding: '0px 1.0875rem 1.45rem',
-        paddingTop: 0,
-      }}
-    >
-      {children()}
+    <div>
+        <Helmet
+            title="Gaja design"
+            meta={[
+                { name: 'description', content: 'Strona domowa agencji kreatywnej Gaja Design' },
+                { name: 'keywords', content: 'poznań, reklama, agencja reklamy, gajzlerowicz, etykiety' },
+            ]}
+        >
+            <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,700" rel="stylesheet" />
+        </Helmet>
+        <div
+            style={{
+                margin: '0 auto',
+                paddingTop: 0,
+            }}
+        >
+            {children()}
+        </div>
     </div>
-  </div>
 )
 
 TemplateWrapper.propTypes = {
-  children: PropTypes.func,
+    children: PropTypes.func,
 }
 
 export default TemplateWrapper
