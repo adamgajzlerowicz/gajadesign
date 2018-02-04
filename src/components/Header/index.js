@@ -25,7 +25,7 @@ const Header = () => (
             textDecoration: 'none',
           }}
         >
-          Gatsby
+         Gaja Design 
         </Link>
       </h1>
     </div>

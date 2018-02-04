@@ -8,10 +8,10 @@ import './index.css'
 const TemplateWrapper = ({ children }) => (
   <div>
     <Helmet
-      title="Gatsby Default Starter"
+      title="Gaja design"
       meta={[
-        { name: 'description', content: 'Sample' },
-        { name: 'keywords', content: 'sample, something' },
+        { name: 'description', content: 'Strona domowa agencji reklamy Gaja Design' },
+        { name: 'keywords', content: 'poznań, reklama, agencja reklamy, gajzlerowicz, etykiety' },
       ]}
     />
     <Header />
