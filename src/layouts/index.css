@@ -701,6 +701,13 @@ pre tt:after {
 
 @media only screen and (max-width: 640px) {
     .contact-methods {
-       flex-direction: column;
+        flex-direction: column;
     }
+}
+.faded-logo {
+    position: fixed;
+    z-index: 999;
+    width: 150px;
+    top: 20px;
+    left: 10px;
 }

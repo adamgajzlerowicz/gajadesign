@@ -3,12 +3,32 @@ import Link from 'gatsby-link';
 import Header from '../media/header.jpg'; 
 import Logo from '../media/gajadesign-logo.png'; 
 import Gallery from '../media/galeria.jpg'; 
+import Fade from 'react-fade'; 
 
 class IndexPage extends React.Component {
 
+    state={
+        showLogo: false
+    };
+
+    componentDidMount(){
+        const that = this;
+        window.addEventListener('scroll', function(e) {
+            that.setState({showLogo: window.scrollY > window.innerHeight - 200 ? true : false});
+        });
+    }
+
     render(){
+        console.log(this.state.showLogo);
         return (
             <div id="page">
+                <Fade
+                    className="faded-logo"
+                    out={!this.state.showLogo}
+                    style={{ opacity: this.state.showLogo ? 1 : 0}}
+                >
+                    <img src={Logo} />
+                </Fade>
                 <div id="header" style={{backgroundImage: `url("${Header}")`}}>
                     <img src={Logo} alt="Gaja design logo" />
                     <div id="header-content">
