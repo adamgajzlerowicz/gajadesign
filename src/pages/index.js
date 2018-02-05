@@ -19,7 +19,6 @@ class IndexPage extends React.Component {
     }
 
     render(){
-        console.log(this.state.showLogo);
         return (
             <div id="page">
                 <Fade
