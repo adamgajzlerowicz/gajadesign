@@ -715,4 +715,8 @@ pre tt:after {
     #header #header-content p {
         font-size: 50px;
     }
+    
+    #contact {
+        justify-content: flex-end;
+    }
 }
