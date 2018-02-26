@@ -4,12 +4,13 @@
   "version": "0.0.1",
   "author": "Adam Gajzlerowicz",
   "dependencies": {
-    "gatsby": "^1.9.158",
+    "gatsby": "^1.9.215",
     "gatsby-link": "^1.6.34",
     "gatsby-plugin-react-helmet": "^2.0.3",
     "inline-style-prefixer": "^4.0.0",
     "react-fade": "^1.1.1",
-    "react-helmet": "^5.2.0"
+    "react-helmet": "^5.2.0",
+    "react-typist": "^2.0.4"
   },
   "keywords": [
     "gatsby"

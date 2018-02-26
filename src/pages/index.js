@@ -4,6 +4,7 @@ import Header from '../media/header.jpg';
 import Logo from '../media/gajadesign-logo.png'; 
 import Gallery from '../media/galeria.jpg'; 
 import Fade from 'react-fade'; 
+import Typist from 'react-typist';
 
 class IndexPage extends React.Component {
 
@@ -31,9 +32,11 @@ class IndexPage extends React.Component {
                 <div id="header" style={{backgroundImage: `url("${Header}")`}}>
                     <img src={Logo} alt="Gaja design logo" />
                     <div id="header-content">
-                        <p>Wiz<strong>ja</strong></p>
-                        <p><strong>Pro</strong>jekt</p>
-                        <p><strong>Real</strong>izacja</p>
+                        <Typist>
+                            <p>Wiz<strong>ja</strong></p>
+                            <p><strong>Pro</strong>jekt</p>
+                            <p><strong>Real</strong>izacja</p>
+                        </Typist>
                     </div>
                 </div>
                 <div id="gallery">
