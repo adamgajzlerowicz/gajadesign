@@ -46,7 +46,7 @@ class IndexPage extends React.Component {
                 <div id="contact">
                     <div className="heading">
                         <p>Chcesz porozmawiać o nowym projekcie?</p> 
-                        <p>Skontaktuj się ze mna!</p>
+                        <p>Skontaktuj się z nami!</p>
                     </div>
                     <div className="contact-methods">
                         <div className="phone"><span>Telefon:</span> 07893745897</div>
