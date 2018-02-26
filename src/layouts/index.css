@@ -645,6 +645,10 @@ pre tt:after {
     padding-left: 42px;
 }
 
+#header #header-content .small-header{
+   font-size: 27px; 
+}
+
 #header #header-content p {
     color: white;
     text-transform: uppercase;

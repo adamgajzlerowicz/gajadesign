@@ -32,6 +32,7 @@ class IndexPage extends React.Component {
                 <div id="header" style={{backgroundImage: `url("${Header}")`}}>
                     <img src={Logo} alt="Gaja design logo" />
                     <div id="header-content">
+                        <p className="small-header"> natura inspiruje </p>
                         <Typist>
                             <p>Wiz<strong>ja</strong></p>
                             <p><strong>Pro</strong>jekt</p>
