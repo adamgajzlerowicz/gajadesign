@@ -1,14 +1,17 @@
 import React from 'react';
-import Link from 'gatsby-link';
-import Header from '../media/header.jpg'; 
+import Header from '../media/header.jpg';
 import Logo from '../media/gajadesign-logo.png'; 
-import Gallery from '../media/galeria.jpg'; 
-import Fade from 'react-fade'; 
-import Typist from 'react-typist';
+import Fade from 'react-fade';
+import Elfrodo from '../media/showcase/elfrodo.jpg';
+import Baron from '../media/showcase/baron.jpg';
+import Coffee from '../media/showcase/coffee.jpg';
+import MultiActiv from '../media/showcase/multiactiv.jpg';
+import Bio from '../media/showcase/bioherbarium.jpg';
+import Lesniowska from '../media/showcase/herbatalesniowska.jpg';
 
 class IndexPage extends React.Component {
 
-    state={
+    state = {
         showLogo: false
     };
 
@@ -30,18 +33,34 @@ class IndexPage extends React.Component {
                     <img src={Logo} />
                 </Fade>
                 <div id="header" style={{backgroundImage: `url("${Header}")`}}>
-                    <img src={Logo} alt="Gaja design logo" />
-                    <div id="header-content">
-                        <p className="small-header"> natura inspiruje </p>
-                        <Typist>
-                            <p>Wiz<strong>ja</strong></p>
+                    <div id="header-inner">
+                        <img src={Logo} alt="Gaja design logo" />
+                        <div id="header-content">
+                            <p className="small-header"> natura inspiruje </p>
+                            <p className={"type-1"}>Wiz<strong>ja</strong></p>
                             <p><strong>Pro</strong>jekt</p>
                             <p><strong>Real</strong>izacja</p>
-                        </Typist>
+                        </div>
                     </div>
+                    <svg className="triangle left" width="21%" height="170" viewBox="0 0 100 102" preserveAspectRatio="none">
+                        <path d="M0 100 L100 100 L0 10 Z"/>
+                    </svg>
+                    <svg className="triangle right" width="80%" height="170" viewBox="0 0 100 102" preserveAspectRatio="none">
+                        <path d="M0 100 L100 100 L100 10 Z"/>
+                    </svg>
                 </div>
                 <div id="gallery">
-                    <img src={Gallery} alt="galeria"/>
+                    <img src={Elfrodo} alt="Elfrodo"/>
+                    <div className={"stacked"}>
+                        <img src={Baron} alt="Baron"/>
+                        <img src={Baron} alt="Baron"/>
+                    </div>
+                    <div className={"stacked"}>
+                        <img src={Coffee} alt="Coffee"/>
+                        <img src={MultiActiv} alt="MutiActiv"/>
+                    </div>
+                    <img src={Bio} alt="Bio Herbarium"/>
+                    <img src={Lesniowska} alt="Herbata Lesniowska"/>
                 </div>
                 <div id="contact">
                     <div className="heading">
