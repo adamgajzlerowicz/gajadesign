@@ -1,7 +1,7 @@
 import React from 'react';
 import Header from '../media/header.jpg';
 import Logo from '../media/gajadesign-logo.png'; 
-import Fade from 'react-fade';
+// import Fade from 'react-fade';
 import Elfrodo from '../media/showcase/elfrodo.jpg';
 import Baron from '../media/showcase/baron.jpg';
 import Coffee from '../media/showcase/coffee.jpg';
@@ -25,13 +25,13 @@ class IndexPage extends React.Component {
     render(){
         return (
             <div id="page">
-                <Fade
-                    className="faded-logo"
-                    out={!this.state.showLogo}
-                    style={{ opacity: this.state.showLogo ? 1 : 0}}
-                >
-                    <img src={Logo} />
-                </Fade>
+                {/*<Fade*/}
+                    {/*className="faded-logo"*/}
+                    {/*out={!this.state.showLogo}*/}
+                    {/*style={{ opacity: this.state.showLogo ? 1 : 0}}*/}
+                {/*>*/}
+                    {/*<img src={Logo} />*/}
+                {/*</Fade>*/}
                 <div id="header" style={{backgroundImage: `url("${Header}")`}}>
                     <div id="header-inner">
                         <img src={Logo} alt="Gaja design logo" />
@@ -49,18 +49,20 @@ class IndexPage extends React.Component {
                         <path d="M0 100 L100 100 L100 10 Z"/>
                     </svg>
                 </div>
-                <div id="gallery">
-                    <img src={Elfrodo} alt="Elfrodo"/>
-                    <div className={"stacked"}>
+                <div className="gallery row-1">
+                    <img className={'child double'} src={Elfrodo} alt="Elfrodo"/>
+                    <div className={'child stacked'}>
                         <img src={Baron} alt="Baron"/>
                         <img src={Baron} alt="Baron"/>
                     </div>
-                    <div className={"stacked"}>
+                </div>
+                <div className="gallery row-2">
+                    <div className={'child'}>
                         <img src={Coffee} alt="Coffee"/>
                         <img src={MultiActiv} alt="MutiActiv"/>
                     </div>
-                    <img src={Bio} alt="Bio Herbarium"/>
-                    <img src={Lesniowska} alt="Herbata Lesniowska"/>
+                    <img className={'child'} src={Bio} alt="Bio Herbarium"/>
+                    <img className={'child'} src={Lesniowska} alt="Herbata Lesniowska"/>
                 </div>
                 <div id="contact">
                     <div className="heading">
